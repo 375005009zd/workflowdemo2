@@ -46,7 +46,8 @@ export default class Model{
 
         const result = []
         data.forEach(it=>{
-            result.push()
+            result.push(gm.createItem(it))
         })
+        this.set(Constants.groupEditList,result)
     }
 }
